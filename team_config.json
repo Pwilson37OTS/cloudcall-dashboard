@@ -1,0 +1,20 @@
+{
+  "managers": [
+    {
+      "username": "ashley",
+      "display_name": "Ashley Riedesel",
+      "cloudcall_team": "POD Ashley"
+    },
+    {
+      "username": "emily",
+      "display_name": "Emily Saulsbury",
+      "cloudcall_team": "POD Emily"
+    },
+    {
+      "username": "drew",
+      "display_name": "Drew Ireland",
+      "cloudcall_team": "POD Drew"
+    }
+  ],
+  "admin_teams": ["POD Ashley", "POD Emily", "POD Drew"]
+}

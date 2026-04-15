@@ -1,0 +1,18 @@
+{
+  "_instructions": "Map cloudcall_user_id to recruiter display name. Edit manually or re-run setup if users change.",
+  "users": {
+    "08e28e2d-371a-4a34-a3bd-5846f551a83f": "Amy Prokopov",
+    "52acecfd-f8f4-4255-af2c-04825b924c12": "Noah Toribio",
+    "64d7f0cf-b5ac-4216-b001-9fbfcd8aa821": "Vanessa Wyrick",
+    "7d31a040-c21c-4902-821c-2981a4632f16": "Madeline Fair",
+    "c6352015-a720-475e-b805-694d4bfc8f23": "Matthew Limekiller",
+    "e633573e-a68a-4497-a6f0-bccc9e9b5d61": "Matt Stafford",
+    "1d0d18dd-925f-4c72-bc4f-67833aaf0418": "Tamera Johnson",
+    "f8f3167d-6452-4cd7-9862-7dedd19054b7": "Ryan Lauerman",
+    "22b509f0-efef-482b-9d6b-62e1039a09c0": "Karen Van Wicklen",
+    "37636587-9cad-49d8-8988-135ff32e9946": "Brooke Burnett",
+    "4d62700c-0ef3-46bd-9949-2cc10a54c387": "Chris Pittenger",
+    "568111f1-8e6e-45f6-b9ec-caf67650b156": "Tatyana Tyson",
+    "efb7cbd7-9632-4c32-825d-2a01cf97570c": "Mike Richardson"
+  }
+}

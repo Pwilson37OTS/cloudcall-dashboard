@@ -1,0 +1,32 @@
+{
+  "users": {
+    "admin": {
+      "password_hash": "$2b$12$VMOpoxK7daMa6ERGH8L96uV6koJPhqUXM6ZDaGOOG1JX7qO1jtKxW",
+      "role": "admin"
+    },
+    "manager1": {
+      "password_hash": "$2b$12$/UZ41hvfZgK9hR8WGxA6/eYQLxAImaXgLREL92.W8mgU3upEHRtAe",
+      "role": "manager"
+    },
+    "manager2": {
+      "password_hash": "$2b$12$7aZhqrUzUVyWTp0goR7HmeqHEiMfbCukbyXLQktiDaBhgo7kcdi7y",
+      "role": "manager"
+    },
+    "manager3": {
+      "password_hash": "$2b$12$AHHCyADfrcKLzfX.DnH/K.eVGdEs01EF8dLiSmScDeTMekPJfGKE.",
+      "role": "manager"
+    },
+    "ashley": {
+      "password_hash": "$2b$12$clWssQzlCPtZW.qxjjfcK.mC.AAttWT5X6DrPMHKqmrn/ZYA.6krK",
+      "role": "manager"
+    },
+    "emily": {
+      "password_hash": "$2b$12$.XP0AmnQMqzWrZtII7QZCuuk1ANKojQZDGoLXVZtRs4u.Qdfbm5WO",
+      "role": "manager"
+    },
+    "drew": {
+      "password_hash": "$2b$12$H.ofl74qVq1RVkZQRDZ/U.Ojf1/6C6hSRqIauGnXzozpyxnLW/nAi",
+      "role": "manager"
+    }
+  }
+}
