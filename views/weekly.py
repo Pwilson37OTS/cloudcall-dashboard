@@ -14,8 +14,6 @@ def _week_bounds(ref_date: date) -> tuple[date, date]:
 
 
 def render_weekly(teams: tuple[str, ...]):
-    st.header("Weekly Activity")
-
     if not teams:
         st.warning("No teams configured. Update team_config.json.")
         return
@@ -70,8 +68,13 @@ def render_weekly(teams: tuple[str, ...]):
         daily["Date"] = pd.to_datetime(daily["Date"])
         daily = daily.sort_values("Date")
         fig_line = px.line(daily, x="Date", y="Calls", markers=True,
-                           color_discrete_sequence=["#636EFA"])
-        fig_line.update_layout(height=350)
+                           color_discrete_sequence=["#36ADEC"])
+        fig_line.update_layout(
+            height=350,
+            plot_bgcolor="#FFFFFF",
+            paper_bgcolor="#FFFFFF",
+            font_color="#0D2A39",
+        )
         st.plotly_chart(fig_line, use_container_width=True)
 
     st.divider()
@@ -95,9 +98,16 @@ def render_weekly(teams: tuple[str, ...]):
             z=pivot_table.values,
             x=pivot_table.columns.tolist(),
             y=[f"{h:02d}:00" for h in pivot_table.index],
-            colorscale="Blues",
+            colorscale=[[0, "#F0E5D5"], [0.5, "#36ADEC"], [1, "#0D2A39"]],
         ))
-        fig_heat.update_layout(height=450, yaxis_title="Hour", xaxis_title="Day")
+        fig_heat.update_layout(
+            height=450,
+            yaxis_title="Hour",
+            xaxis_title="Day",
+            plot_bgcolor="#FFFFFF",
+            paper_bgcolor="#FFFFFF",
+            font_color="#0D2A39",
+        )
         st.plotly_chart(fig_heat, use_container_width=True)
     else:
         st.info("Hourly data not available for this period.")

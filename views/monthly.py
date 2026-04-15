@@ -14,8 +14,6 @@ def _month_bounds(year: int, month: int) -> tuple[date, date]:
 
 
 def render_monthly(teams: tuple[str, ...]):
-    st.header("Monthly Activity")
-
     if not teams:
         st.warning("No teams configured. Update team_config.json.")
         return
@@ -89,8 +87,14 @@ def render_monthly(teams: tuple[str, ...]):
         daily.columns = ["Date", "Calls"]
         daily["Date"] = pd.to_datetime(daily["Date"])
         daily = daily.sort_values("Date")
-        fig = px.bar(daily, x="Date", y="Calls", color_discrete_sequence=["#636EFA"])
-        fig.update_layout(height=350, xaxis_tickformat="%b %d")
+        fig = px.bar(daily, x="Date", y="Calls", color_discrete_sequence=["#36ADEC"])
+        fig.update_layout(
+            height=350,
+            xaxis_tickformat="%b %d",
+            plot_bgcolor="#FFFFFF",
+            paper_bgcolor="#FFFFFF",
+            font_color="#0D2A39",
+        )
         st.plotly_chart(fig, use_container_width=True)
 
     st.divider()

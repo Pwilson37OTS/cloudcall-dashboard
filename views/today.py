@@ -6,7 +6,6 @@ from api_client import get_daily_activity, build_rep_summary, format_duration, l
 
 
 def render_today(teams: tuple[str, ...]):
-    st.header("Today's Activity")
     st.caption(date.today().strftime("%A, %B %d, %Y"))
 
     if not teams:
@@ -52,7 +51,12 @@ def render_today(teams: tuple[str, ...]):
     fig = px.bar(
         chart_data, x="Recruiter", y="Calls", color="Direction",
         barmode="stack",
-        color_discrete_map={"Outbound": "#636EFA", "Inbound": "#00CC96"},
+        color_discrete_map={"Outbound": "#36ADEC", "Inbound": "#FF6F59"},
     )
-    fig.update_layout(xaxis_tickangle=-30, height=400)
+    fig.update_layout(
+        xaxis_tickangle=-30, height=400,
+        plot_bgcolor="#FFFFFF",
+        paper_bgcolor="#FFFFFF",
+        font_color="#0D2A39",
+    )
     st.plotly_chart(fig, use_container_width=True)
