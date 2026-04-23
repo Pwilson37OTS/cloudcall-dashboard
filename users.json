@@ -1,7 +1,7 @@
 {
   "users": {
     "admin": {
-      "password_hash": "$2b$12$VMOpoxK7daMa6ERGH8L96uV6koJPhqUXM6ZDaGOOG1JX7qO1jtKxW",
+      "password_hash": "$2b$12$Z79vxdfdlcUKYcTtng/Ayugi3gHOQwJo5G/fFv2b7Q7jAMIa6pgHy",
       "role": "admin"
     },
     "manager1": {
